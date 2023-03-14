@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-P5S2uPk+exJtfG5+4xptlza7VpJ6L8Uzm/fu3qvvH+sbGanZJPLa23Q2aBr6xRjX9fY/2DddukQsLsOieF1ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Conferance</title>
   </head>
 
@@ -18,13 +26,18 @@
         </button>
       </nav>
     </header>
-    <section id="hero" class="bg-bgHero bg-no-repeat bg-cover">
+
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="w-screen bg-bgHero bg-no-repeat bg-cover min-h-[600px]"
+    >
       <div class="container mx-auto px-8 py-24">
         <div class="flex flex-col space-y-12">
           <div class="flex flex-col gap-2">
             <span class="text-callAction text-xl font-semibold"
-              >"Hello! Sharing world"</span
-            >
+              >"Hello! Sharing world"
+            </span>
             <h1
               class="text-4xl text-callAction font-[900] bg-textImg image-text"
             >
@@ -49,75 +62,149 @@
         </div>
       </div>
     </section>
+
+    <!-- Program -->
     <section id="program" class="bg-primary bg-bgProgram bg-repeat">
-      <div class="container mx-auto px-4 pb-8">
-        <div class="flex flex-col gap-4 items-center py-8 px-2">
-          <h2 class="text-white text-xl font-medium">Main Program</h2>
+      <div class="container flex flex-col space-y-8 mx-auto px-4 pb-8">
+        <div class="flex flex-col gap-4 items-center pt-8 px-2">
+          <h2 class="text-white text-2xl font-medium">Main Program</h2>
           <span class="dash bg-callAction"></span>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col md:flex-row gap-4">
           <div
-            class="flex gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
+            class="flex md:flex-col md:items-center gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
           >
-            <div class="flex w-[32%] gap-2 justify-center items-center">
+            <div
+              class="flex md:flex-col w-[32%] md:w-full gap-2 justify-center items-center"
+            >
               <img width="44" src="./images/icons4.png" alt="" />
               <h4 class="text-callAction font-semibold">Lecture</h4>
             </div>
-            <p class="text-secondary w-[68%] text-sm">
+            <p class="text-secondary w-[68%] md:px-4 md:w-full text-sm">
               Lorem ipsum dolor sit amet, consectetur adip is icing elit. Vero,
               iste molestias? Lorem ipsum dolor sit amet.
             </p>
           </div>
           <div
-            class="flex gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
+            class="flex md:flex-col md:items-center gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
           >
-            <div class="flex w-[32%] gap-2 justify-center items-center">
+            <div
+              class="flex md:flex-col md:text-center w-[32%] md:w-full gap-2 justify-center items-center"
+            >
               <img width="44" src="./images/icons.png" alt="" />
               <h4 class="text-callAction font-semibold">CC exhibition</h4>
             </div>
-            <p class="text-secondary w-[68%] text-sm">
+            <p class="text-secondary w-[68%] md:px-4 md:w-full text-sm">
               Lorem ipsum dolor sit amet, consectetur adip is icing elit. Vero,
               iste molestias? Lorem ipsum dolor sit amet.
             </p>
           </div>
           <div
-            class="flex gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
+            class="flex md:flex-col md:items-center gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
           >
-            <div class="flex w-[32%] gap-2 justify-center items-center">
+            <div
+              class="flex md:flex-col w-[32%] md:w-full gap-2 justify-center items-center"
+            >
               <img width="44" src="./images/icons2.png" alt="" />
               <h4 class="text-callAction font-semibold">Forum</h4>
             </div>
-            <p class="text-secondary w-[68%] text-sm">
+            <p class="text-secondary w-[68%] md:px-4 md:w-full text-sm">
               Lorem ipsum dolor sit amet, consectetur adip is icing elit. Vero,
               iste molestias? Lorem ipsum dolor sit amet.
             </p>
           </div>
           <div
-            class="flex gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
+            class="flex md:flex-col md:items-center gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
           >
-            <div class="flex w-[32%] gap-2 justify-center items-center">
+            <div
+              class="flex md:flex-col w-[32%] md:w-full gap-2 justify-center items-center"
+            >
               <img width="44" src="./images/icons5.png" alt="" />
               <h4 class="text-callAction font-semibold">Workshop</h4>
             </div>
-            <p class="text-secondary w-[68%] text-sm">
+            <p class="text-secondary w-[68%] md:px-4 md:w-full text-sm">
               Lorem ipsum dolor sit amet, consectetur adip is icing elit. Vero,
               iste molestias? Lorem ipsum dolor sit amet.
             </p>
           </div>
           <div
-            class="flex gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
+            class="flex md:flex-col md:items-center gap-4 justify-between bg-gray-500 bg-opacity-20 py-4 rounded"
           >
-            <div class="flex w-[32%] gap-2 justify-center items-center">
+            <div
+              class="flex md:flex-col md:text-center w-[32%] md:w-full gap-2 justify-center items-center"
+            >
               <img width="44" src="./images/icons3.png" alt="" />
               <h4 class="text-callAction font-semibold">CC Ignite</h4>
             </div>
-            <p class="text-secondary w-[68%] text-sm">
+            <p class="text-secondary w-[68%] md:px-4 md:w-full text-sm">
               Lorem ipsum dolor sit amet, consectetur adip is icing elit. Vero,
               iste molestias? Lorem ipsum dolor sit amet.
             </p>
           </div>
         </div>
+        <div class="flex flex-col items-center">
+          <button
+            class="text-white text-l px-8 py-4 mx-auto bg-callAction md:hidden"
+          >
+            Join CC Global Summit 2015
+          </button>
+          <a
+            href=""
+            class="underline underline-offset-auto hidden uppercase cursor-pointer text-white md:contents"
+            >See the whole program
+          </a>
+        </div>
       </div>
     </section>
+
+    <!-- Speakers -->
+    <section id="">
+      <div class="container flex flex-col mx-auto space-y-8">
+        <div class="flex flex-col gap-4 items-center pt-8 px-2">
+          <h2 class="text-primary text-2xl font-medium">Featured Speakers</h2>
+          <span class="dash bg-callAction"></span>
+        </div>
+        <!-- Speaker -->
+        <div
+          id="speakers"
+          class="flex mx-4 flex-col gap-8 box-border md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-8 md:mx-0"
+        >
+          <!-- Speaker 1 -->
+          <div
+            class="flex sm:justify-between gap-4 items-center md:items-start"
+          >
+            <div class="w-[30%]">
+              <img class="rounded-md w-16" src="./images/88guitar.jpg" alt="" />
+              <img
+                class="-mt-10 ml-8 w-28"
+                src="./images/88soccer.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col w-[60%] gap-2">
+              <h3 class="font-bold text-lg">Yochani Benkler</h3>
+              <span class="italic text-callAction text-sm font-semibold"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Atque?
+              </span>
+              <span class="dash bg-gray-400"></span>
+              <p class="text-gray-500 text-sm font-medium">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Praesentium soluta ea illo?
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          id="collapse"
+          class="p-4 mx-auto w-11/12 border-2 rounded-md"
+        >
+          <span id="expand" class="text-primary"> More .. </span>
+          <span id="exit" class="hidden text-primary"> .. Less </span>
+        </button>
+      </div>
+    </section>
+    <script src="./JS/script.js"></script>
   </body>
 </html>

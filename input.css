@@ -74,16 +74,18 @@
 
 .open {
   transform: rotate(90deg);
-  transform: translateY(0px);
+  transform: translateY(0);
 }
 
 .open .burger-t {
   transform: rotate(45deg) translateY(6px) translate(6px);
   background: white;
 }
+
 .open .burger-m {
   display: none;
 }
+
 .open .burger-b {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
   background: white;

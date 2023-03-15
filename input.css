@@ -50,3 +50,17 @@
   width: 40px;
   height: 2px;
 }
+
+.my-hover {
+  border: 2px solid #fff0;
+}
+
+.my-hover:hover {
+  border-color: #fff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 976px) {
+  .my-gap {
+    gap: 50px;
+  }
+}

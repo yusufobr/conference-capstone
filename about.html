@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Ex Speaker Event | About ..</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="bg-[#3E3E3E] p-2 hidden md:block">
+        <div
+          class="flex justify-end gap-4 container mx-auto text-sm text-white"
+        >
+          <img width="14" src="./images/facebook.svg" alt="" />
+          <img width="14" src="./images/twitter.svg" alt="" />
+          <a href="#">English</a>
+          <a href="#">My Page</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+
+      <nav class="container mx-auto pl-[2%] py-4">
+        <div
+          class="w-full grid grid-cols-2 items-center justify-between hidden md:flex"
+        >
+          <a href="#">
+            <img width="200" src="./images/LOGO.svg" alt="" />
+          </a>
+          <ul class="flex gap-6 justify-end">
+            <li>
+              <a href="about.html" class="hover:text-callAction">About</a>
+            </li>
+            <li>
+              <a href="index.html#program" class="hover:text-callAction"
+                >Program</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-callAction">Join</a></li>
+            <li>
+              <a href="index.html#sponsors" class="hover:text-callAction"
+                >Sponsor</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-callAction">News</a></li>
+            <li>
+              <a
+                href="#"
+                class="text-callAction font-semibold border-4 p-2 border-callAction"
+                >Buy Ticket</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Nav -->
+        <button id="menu-btn" class="block z-40 burger md:hidden">
+          <span class="burger-t"></span>
+          <span class="burger-m"></span>
+          <span class="burger-b"></span>
+        </button>
+        <ul
+          id="nav-mobile"
+          class="flex flex-col hidden md:hidden justify-between fixed gap-6 h-[85vh] text-5xl text-white py-24 font-bold z-20"
+        >
+          <li><a href="./about.html">About</a></li>
+          <li><a href="index.html#program">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="index.html#sponsors">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Footer -->
+    <section class="py-16">
+      <div class="flex container gap-4 mx-auto justify-between items-center">
+        <a href="#" class="ml-[2%]">
+          <img src="./images/LOGO.svg" alt="" class="md:w-56 w-44" />
+        </a>
+        <div class="w-[50%] text-primary">
+          <span class="font-semibold"
+            >@2023 creative Lorem ipsum dolor sit amet.</span
+          >
+          <p class="text-xs">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse et
+            accusamus placeat quos sed maxime debitis iste vitae eos molestiae.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overly -->
+    <div id="overly" class="hidden md:hidden"></div>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

@@ -49,6 +49,26 @@ const speakersData = [
   },
 ];
 
+const navBtn = document.getElementById('menu-btn');
+const navList = document.getElementById('nav-mobile');
+const overly = document.getElementById('overly');
+
+navBtn.addEventListener('click', () => {
+  navBtn.classList.toggle('open');
+  navList.classList.toggle('hidden');
+  overly.classList.toggle('hidden');
+});
+
+const speaker3 = document.getElementById('speaker-3');
+const speaker4 = document.getElementById('speaker-4');
+const speaker5 = document.getElementById('speaker-5');
+const speaker6 = document.getElementById('speaker-6');
+const spkArr = [speaker3, speaker4, speaker5, speaker6];
+
+const moreBtn = document.getElementById('collapse');
+const expandBtn = document.getElementById('expand');
+const exitBtn = document.getElementById('exit');
+
 const myScreen = window.screen.width;
 
 const speaker = document.getElementById('speakers');
@@ -83,16 +103,6 @@ speaker.innerHTML = speakersData
   )
   .join('');
 
-const speaker3 = document.getElementById('speaker-3');
-const speaker4 = document.getElementById('speaker-4');
-const speaker5 = document.getElementById('speaker-5');
-const speaker6 = document.getElementById('speaker-6');
-const spkArr = [speaker3, speaker4, speaker5, speaker6];
-
-const moreBtn = document.getElementById('collapse');
-const expandBtn = document.getElementById('expand');
-const exitBtn = document.getElementById('exit');
-
 window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
     spkArr.forEach((spk) => spk.classList.add('hidden'));
@@ -107,14 +117,4 @@ moreBtn.addEventListener('click', () => {
   expandBtn.classList.toggle('hidden');
   exitBtn.classList.toggle('hidden');
   spkArr.forEach((spk) => spk.classList.toggle('hidden'));
-});
-
-const navBtn = document.getElementById('menu-btn');
-const navList = document.getElementById('nav-mobile');
-const overly = document.getElementById('overly');
-
-navBtn.addEventListener('click', () => {
-  navBtn.classList.toggle('open');
-  navList.classList.toggle('hidden');
-  overly.classList.toggle('hidden');
 });

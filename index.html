@@ -31,34 +31,68 @@
         </div>
       </div>
 
-      <nav class="container mx-auto px-8 py-4">
-        <button id="menu-btn" class="block burger md:hidden">
+      <nav class="container mx-auto px-[2%] py-4">
+        <div
+          class="w-full grid grid-cols-2 items-center justify-between hidden md:flex"
+        >
+          <a href="#"><img width="200" src="./images/LOGO.svg" alt="" /></a>
+          <ul class="flex gap-6 justify-end">
+            <li>
+              <a href="about.html" class="hover:text-callAction">About</a>
+            </li>
+            <li><a href="#" class="hover:text-callAction">Program</a></li>
+            <li><a href="#" class="hover:text-callAction">Join</a></li>
+            <li>
+              <a href="#Sponsor" class="hover:text-callAction">Sponsor</a>
+            </li>
+            <li><a href="#" class="hover:text-callAction">News</a></li>
+            <li>
+              <a
+                href="#"
+                class="text-callAction font-semibold border-4 p-2 border-callAction"
+                >Buy Ticket</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Nav -->
+        <button id="menu-btn" class="block z-40 burger md:hidden">
           <span class="burger-t"></span>
           <span class="burger-m"></span>
           <span class="burger-b"></span>
         </button>
+        <ul
+          id="nav-mobile"
+          class="flex flex-col hidden md:hidden justify-between fixed gap-6 h-[85vh] text-5xl text-white py-24 font-bold z-20"
+        >
+          <li><a href="/about.html">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#Sponsor">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- Hero -->
     <section
       id="hero"
-      class="w-screen bg-bgHero bg-no-repeat bg-cover min-h-[600px]"
+      class="bg-bgHero md:bg-bgHeroDesktop bg-no-repeat bg-cover min-h-[600px]"
     >
-      <div class="container mx-auto px-8 py-24">
+      <div class="container mx-auto px-[2%] py-24">
         <div class="flex flex-col space-y-12">
           <div class="flex flex-col gap-2">
-            <span class="text-callAction text-xl font-semibold md:text-3xl"
-              >"Hello! Sharing world"
+            <span class="text-callAction text-xl font-medium md:text-3xl"
+              >"Hello! Brillian Minds"
             </span>
             <h1
-              class="text-4xl md:text-6xl md:w-[90%] lg:[70%] text-callAction font-[900] bg-textImg image-text my-font"
+              class="text-4xl md:text-6xl md:w-[90%] lg:w-[70%] text-callAction font-[900] bg-textImg image-text my-font"
             >
-              CREATIVE COMMONS GLOBAL SUMMIT 2020
+              CREATIVE COMMONS GLOBAL SUMMIT 2022
             </h1>
           </div>
           <div
-            class="p-4 border-2 border-gray-100 bg-gray-50 drop-shadow-md md:w-[90%] lg:[70%]"
+            class="p-4 border-2 border-gray-100 bg-gray-50 drop-shadow-md md:w-[90%] lg:w-[60%]"
           >
             <p class="text-primary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -174,8 +208,8 @@
     </section>
 
     <!-- Speakers -->
-    <section id="">
-      <div class="container flex flex-col mx-auto space-y-8">
+    <section id="the-speakers">
+      <div class="container flex flex-col mb-16 mx-auto space-y-8">
         <div class="flex flex-col gap-4 items-center pt-8 px-2">
           <h2 class="text-primary text-2xl font-medium">Featured Speakers</h2>
           <span class="dash bg-callAction"></span>
@@ -221,6 +255,31 @@
         </button>
       </div>
     </section>
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="bg-primary">
+      <div class="container flex flex-col space-y-8 mx-auto px-4 pb-8">
+        <div class="flex flex-col gap-4 items-center pt-8 px-2">
+          <h2 class="text-white text-2xl font-medium">Sponsors</h2>
+          <span class="dash bg-callAction"></span>
+        </div>
+        <div class="flex flex-wrap gap-12 justify-center">
+          <img class="max-h-10" src="/images/ppcom.svg" alt="paypal" />
+          <img
+            class="max-h-10"
+            src="/images/Mastercard-logo.svg"
+            alt="Mastercard-logo"
+          />
+          <img class="max-h-10" src="./images/jp-morgan.svg" alt="jp-morgan" />
+          <img class="max-h-10" src="/images/binance.svg" alt="binance" />
+          <img class="max-h-10" src="/images/tedx.svg" alt="tedx" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Overly -->
+    <div id="overly" class="hidden md:hidden"></div>
+
     <script src="./JS/script.js"></script>
   </body>
 </html>

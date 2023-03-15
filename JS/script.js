@@ -58,7 +58,7 @@ speaker.innerHTML = speakersData
     <!-- Speaker ${spk.id} -->
     <div
     id="speaker-${spk.id}"
-    class=" flex justify-start gap-4 my-gap items-center ${
+    class=" flex justify-start gap-4 my-gap items-center  ${
   spk.id > 2 && (myScreen < 768) ? 'hidden' : ''
 } md:items-start">
     <div class="w-[30%]">
@@ -108,3 +108,14 @@ moreBtn.addEventListener('click', () => {
   exitBtn.classList.toggle('hidden');
   spkArr.forEach((spk) => spk.classList.toggle('hidden'));
 });
+
+
+const navBtn = document.getElementById('menu-btn');
+const navList = document.getElementById('nav-mobile');
+const overly = document.getElementById('overly');
+
+navBtn.addEventListener('click', () => {
+  navBtn.classList.toggle('open');
+  navList.classList.toggle('hidden');
+  overly.classList.toggle('hidden');
+})

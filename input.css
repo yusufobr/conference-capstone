@@ -11,7 +11,7 @@
 
 /* Hamburger Menu */
 .burger {
-  position: relative;
+  position: fixed;
   cursor: pointer;
   width: 30px;
   height: 32px;
@@ -57,6 +57,36 @@
 
 .my-hover:hover {
   border-color: #fff;
+}
+
+#overly {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e9321e85;
+  z-index: 9;
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(8px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .burger-t {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+  background: white;
+}
+.open .burger-m {
+  display: none;
+}
+.open .burger-b {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+  background: white;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 976px) {

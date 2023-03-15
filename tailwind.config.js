@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         bgHero: 'url(../images/bg-hero.svg)',
+        bgHeroDesktop: 'url(../images/bg-hero-desktop.svg)',
         bgProgram: 'url(../images/program-bg.svg)',
       },
       colors: {

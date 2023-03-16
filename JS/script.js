@@ -49,10 +49,6 @@ const speakersData = [
   },
 ];
 
-
-
-
-
 const moreBtn = document.getElementById('collapse');
 const expandBtn = document.getElementById('expand');
 const exitBtn = document.getElementById('exit');
@@ -91,7 +87,7 @@ speaker.innerHTML = speakersData
   )
   .join('');
 
-  const speaker3 = document.getElementById('speaker-3');
+const speaker3 = document.getElementById('speaker-3');
 const speaker4 = document.getElementById('speaker-4');
 const speaker5 = document.getElementById('speaker-5');
 const speaker6 = document.getElementById('speaker-6');
@@ -106,7 +102,6 @@ window.addEventListener('resize', () => {
     spkArr.forEach((spk) => spk.classList.remove('hidden'));
   }
 });
-
 
 moreBtn.addEventListener('click', () => {
   expandBtn.classList.toggle('hidden');

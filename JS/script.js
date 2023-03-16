@@ -87,12 +87,12 @@ speaker.innerHTML = speakersData
         alt="${spk.name}"
       />
     </div>
-    <div class="flex flex-col w-[60%] gap-2">
+    <div class="flex flex-col w-[60%] gap-1">
       <h3 class="font-bold text-lg">${spk.name}</h3>
       <span class="italic text-callAction text-sm font-semibold">
       ${spk.position}
       </span>
-      <span class="dash bg-gray-400"></span>
+      <span class="dash dash-bg"></span>
       <p class="text-gray-500 text-sm font-medium">
       ${limitWords(spk.biography, 22)}
       </p>

@@ -88,7 +88,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://www.loom.com/share/0586ed11ee634c5aa505321bb3a4d9a1)
+- [Live Demo Link](https://yusufobr.github.io/conference-capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

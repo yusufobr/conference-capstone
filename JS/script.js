@@ -49,6 +49,20 @@ const speakersData = [
   },
 ];
 
+// Limit the number of words in Paragraphs
+function limitWords(paragraph, limit) {
+  const words = paragraph.split(' ');
+  if (words.length <= limit) return paragraph;
+
+  const limitedWords = words.slice(0, limit);
+
+  let limitedParagraph = limitedWords.join(' ');
+
+  limitedParagraph += '...';
+
+  return limitedParagraph;
+}
+
 const moreBtn = document.getElementById('collapse');
 const expandBtn = document.getElementById('expand');
 const exitBtn = document.getElementById('exit');
@@ -60,15 +74,15 @@ speaker.innerHTML = speakersData
   .map(
     (spk) => `
     <!-- Speaker ${spk.id} -->
-    <div
+    <article
     id="speaker-${spk.id}"
     class=" flex justify-start gap-4 my-gap items-center  ${
   spk.id > 2 && (myScreen < 768) ? 'hidden' : ''
 } md:items-start">
-    <div class="w-[30%]">
-      <img class="w-16" src="./images/bellow-images.svg" alt="" />
+    <div class="w-[30%] relative save-me-mr">
+      <img class="w-12" src="./images/bellow-images.svg" alt="${spk.name} icon" />
       <img
-        class="-mt-10 ml-8 w-28 rounded-md"
+        class="w-28 rounded-md absolute save-me"
         src="${spk.image}"
         alt="${spk.name}"
       />
@@ -80,10 +94,10 @@ speaker.innerHTML = speakersData
       </span>
       <span class="dash bg-gray-400"></span>
       <p class="text-gray-500 text-sm font-medium">
-      ${spk.biography}
+      ${limitWords(spk.biography, 22)}
       </p>
     </div>
-  </div>`,
+  </article>`,
   )
   .join('');
 
